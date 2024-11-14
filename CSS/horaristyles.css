@@ -1,0 +1,159 @@
+/*Fet per Shaila Martínez González de Molina / 1rC SMX*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafaea;
+    color: #333;
+  }
+
+header {
+    background-color: #fff895;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  h1 {
+    margin: 0;
+    color: #818300;
+  }
+
+  h3 {
+    color: #000000;
+  }
+
+  footer {
+    background-color: #fff895;
+    color: #000000;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+/*header logo*/
+#logo-sapa {
+  width: 10%;
+  display: grid;
+}
+
+
+/*otro*/
+
+body.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+  padding: 20px;
+}
+
+
+/* CSS de la taula */
+* table{
+    width: 70%;
+    text-align: center;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Anglès{
+    background-color: #fdcae1;
+    border: solid 2px black;
+}
+.Xarxes{
+    background-color: #87CEFA;
+    border: solid 2px black;
+}
+.FOL{
+    background-color: #fec498;
+    border: solid 2px black;
+}
+.Hardware{
+    background-color: rgb(251, 220, 193);
+    border: solid 2px black;
+}
+.Ofimàtica{
+    background-color: #f7f2b2;
+    border: solid 2px black;
+}
+.Web{
+    background-color: #9fffff;
+    border: solid 2px black;
+}
+.EIE{
+    background-color: #b0c2f2;
+    border: solid 2px black;
+}
+.Tutoria{
+    background-color: #98FB98;
+    border: solid 2px black;
+}
+.Sistemes{
+    background-color: #a3ffac;
+    border: solid 2px black;
+}
+.Tallers{
+    background-color: rgb(255, 255, 134);
+    border: solid 2px black;
+}
+
+
+/* CSS del dark mode button */
+#modoOscuroBtn {
+    margin-right: auto;
+    background-color: #c5bc3e;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #modoOscuroBtn:hover {
+    background-color: #818300;
+  }
+
+
+/* CSS del dark mode */
+body.dark-mode {
+    background-color: #333;
+    color: #000000;
+}
+
+
+/* CSS de la navbar */
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #c5bc3e;
+  padding: 0px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    background-color: #c5bc3e;
+    padding: 10px;
+  }
+  
+  .navigation li {
+    margin: 0 15px;
+    list-style: none;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navigation a:hover {
+    color: #818300;
+  }

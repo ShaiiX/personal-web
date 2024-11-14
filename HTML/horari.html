@@ -1,0 +1,108 @@
+<!--Fet per Shaila Martínez González de Molina / 1rC SMX-->
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Horari</title>
+    <link rel= "stylesheet" type="text/css" href="../CSS/horaristyles.css">
+</head>
+
+<body class="flex-container">
+    <header>
+        <img id="logo-sapa" src="../Imatges_Videos/logo-institut-sapalomera.png" alt="Logo" class="logo">
+        <h1>HORARI</h1>
+        <h3>SMX 1rC</h3>
+    </header>
+    
+    <nav>
+        <button id="modoOscuroBtn" onclick="toggleDark()">Dark mode</button>
+        <ul class="navigation">
+          <li><a href="../fitxapersonal.html">Main Page</a></li>
+          <li><a href="horari.html">Horari</a></li>
+          <li><a href="estudis.html">Estudis</a></li>
+          <li><a href="tasquesm08.html">Tasques M08</a></li>
+        </ul>
+    </nav>
+
+    <main class="center-container">
+        <table>
+            <tr>
+                <th colspan="6" style="font-size: 42px; font-style: italic;">｡*･HORARI･*｡</th>
+            </tr>
+            <tr style="padding-bottom: 1px;">
+                <th>Hora</th>
+                <th>Dilluns</th>
+                <th>Dimarts</th>
+                <th>Dimecres</th>
+                <th>Dijous</th>
+                <th>Divendres</th>
+            </tr>
+            <tr>
+                <td>8.30<br>9.30</td>
+                <td class="Anglès"> <strong>Anglès</strong> <br> Cristina Soler <br> Aula 3</td>
+                <td class="Xarxes"> <strong>Xarxes</strong> <br> Josep Oliveras <br> Aula 3</td>
+                <td class="Xarxes"> <strong>Xarxes</strong> <br> Josep Oliveras <br> Aula 3</td>
+                <td class="FOL"> <strong>FOL</strong><br> M.Bermúdez <br> Aula 2</td>
+                <td class="Xarxes"> <strong>Xarxes</strong> <br> Josep Oliveras <br> Aula 3</td>
+            </tr>
+            <tr>
+                <td>9.30<br>10.30</td>
+                <td class="Anglès"> <strong>Anglès</strong> <br> Cristina Soler <br> Aula 3</td>
+                <td class="Xarxes"> <strong>Xarxes</strong> <br> Josep Oliveras <br> Aula 3</td>
+                <td class="Hardware"> <strong>Hardware</strong> <br> J.Catà - R.Pla <br> Aula 1</td>
+                <td class="FOL"> <strong>FOL</strong> <br> M.Bermúdez <br> Aula 2</td>
+                <td class="Xarxes"> <strong>Xarxes</strong> <br> Josep Oliveras <br> Aula 3</td>
+            </tr>
+            <tr>
+                <td>10.30<br>11.30</td>
+                <td class="EIE"> <strong>EIE</strong> <br>Ernest Calero <br> Aula 3</td>
+                <td class="Sistemes"> <strong>Sistemes</strong> <br> Manel Pérez <br> Aula 1</td>
+                <td class="Hardware"> <strong>Hardware</strong> <br> J.Catà - R.Pla <br> Aula 1</td>
+                <td class="Ofimàtica"> <strong>Ofimàtica</strong> <br> Sílvia Fortuny <br> Aula 2</td>
+                <td class="Web"> <strong>Web</strong> <br> Ainhoa Zaldúa <br> Aula 2</td>
+            </tr>
+            <tr>
+                <td style="color: #ffffff;">.</td>
+                <td colspan="5">Descans</td>
+            </tr>
+            <tr>
+                <td>12.00<br>13.00</td>
+                <td class="EIE"> <strong>EIE</strong> <br>Ernest Calero <br> Aula 3</td>
+                <td class="Hardware"> <strong>Hardware</strong> <br> J.Catà - R.Pla <br> Aula 1</td>
+                <td class="Web"> <strong>Web</strong> <br> Ainhoa Zaldúa <br> Aula 1</td>
+                <td class="Ofimàtica"> <strong>Ofimàtica</strong> <br> Sílvia Fortuny <br> Aula 2</td>
+                <td class="Web"> <strong>Web</strong> <br> Ainhoa Zaldúa <br> Aula 2</td>
+            </tr>
+            <tr>
+                <td>13.00<br>14.00</td>
+                <td class="Ofimàtica"> <strong>Ofimàtica</strong> <br> Sílvia Fortuny <br> Aula 2</td>
+                <td class="Hardware"> <strong>Hardware</strong> <br> J.Catà - R.Pla <br> Aula 1</td>
+                <td class="Tutoria"> <strong>Tutoria</strong> <br> Josep Oliveras <br> Aula 1</td>
+                <td class="Ofimàtica"> <strong>Ofimàtica</strong> <br> Sílvia Fortuny <br> Aula 2</td>
+                <td class="Sistemes"> <strong>Sistemes</strong> <br> Manel Pérez <br> Aula 1</td>
+            </tr>
+            <tr>
+                <td>14.00<br>15.00</td>
+                <td class="Ofimàtica"> <strong>Ofimàtica</strong> <br> Sílvia Fortuny <br> Aula 2</td>
+                <td></td>
+                <td class="Tallers"> <strong>Tallers</strong> <br>*<br> Aula 1-4</td>
+                <td class="Anglès"> <strong>Anglès</strong> <br> Cristina Soler <br> Aula 3</td>
+                <td class="Sistemes"> <strong>Sistemes</strong> <br> Manel Pérez <br> Aula 1</td>
+            </tr>
+        </table>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Shaila</p>
+    </footer>
+
+    <script>
+        function toggleDark() {
+          const body = document.body;
+          body.classList.toggle("dark-mode");
+        }
+    </script>
+    
+</body>
+</html>

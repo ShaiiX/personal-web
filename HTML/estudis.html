@@ -1,0 +1,65 @@
+<!--Fet per Shaila Martínez González de Molina / 1rC SMX-->
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Estudis</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/estudisstyles.css">
+</head>
+
+<body>
+  <header>
+    <img id="logo-sapa" src="../Imatges_Videos/logo-institut-sapalomera.png" alt="Logo" class="logo">
+    <h1>ESTUDIS</h1>
+    <h3>SMX 1rC</h3>
+  </header>
+  
+  <nav>
+    <button id="modoOscuroBtn" onclick="toggleDark()">Dark mode</button>
+    <ul class="navigation">
+      <li><a href="../fitxapersonal.html">Main Page</a></li>
+      <li><a href="horari.html">Horari</a></li>
+      <li><a href="estudis.html">Estudis</a></li>
+      <li><a href="tasquesm08.html">Tasques M08</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section id="education3">
+      <h2>Educació</h2>
+      <div class="education-description">
+        <h3>Descripció general</h3>
+        <p>Sóc estudiant de SMX a l'institut Sa Palomera de Blanes. M'agrada molt la tecnologia, així com la informàtica. En acabar el grau mitjà, m'agradaria fer el grau superior de DAW, que està enfocat en desenvolupament d'aplicacions web.</p>
+      </div>
+    </section>
+    
+    <section id="education">
+      <h3>Títols</h3>
+      <ul class="education-titles">
+        <li>Primària</li>
+        <li>ESO</li>
+      </ul>
+    </section>
+    
+    <section id="education2">
+      <h3>Estudis actuals</h3>
+      <ul class="education-now">
+        <li>SMX → Sistemes Microinformàtics i xarxes</li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Shaila</p>
+  </footer>
+
+  <script>
+    function toggleDark() {
+      const body = document.body;
+      body.classList.toggle("dark-mode");
+    }
+  </script>
+  
+</body>
+</html>

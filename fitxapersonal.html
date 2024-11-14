@@ -1,0 +1,206 @@
+<!--Fet per Shaila Martínez González de Molina / 1rC SMX-->
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Fitxa Personal (Main Page)</title>
+  <link rel="stylesheet" type="text/css" href="./CSS/fitxapersonalstyles.css">
+</head>
+
+<body>
+    <div>
+      <header>
+        <img id="logo-sapa" src="Imatges_Videos/logo-institut-sapalomera.png" alt="Logo" class="logo">
+        <h1>PÀGINA PRINCIPAL</h1>
+        <h3>SMX 1rC</h3>
+      </header>
+      
+      <nav>
+          <button id="modoOscuroBtn" onclick="toggleDark()">Dark mode</button>
+          <ul class="navigation">
+            <li><a href="fitxapersonal.html">Main Page</a></li>
+            <li><a href="HTML/horari.html">Horari</a></li>
+            <li><a href="HTML/estudis.html">Estudis</a></li>
+            <li><a href="HTML/tasquesm08.html">Tasques M08</a></li>
+          </ul>
+      </nav>
+      
+      <section>
+        <h2>Contingut general</h2>
+          <p>¡Benvingut/da a la meva pàgina! <br><br>
+            Aquí trobaràs un formulari on omplir la teva fitxa personal, estudis, horaris i tasques fetes de Web.
+          </p>
+      </section>
+    </div>
+
+  <main>
+  <div class="container">
+      <header>
+        <div class="profile-site"></div>
+        <h1>Fitxa Personal</h1>
+      </header>
+  
+    <form action="/action_page.php" method="post">
+    <div class="form-group">
+        <div class="form-item">
+          <p>Escriu el teu nom i cognom:</p>
+        <label for="fnom">Nom:</label><br>
+        <input type="text" id="fnom" name="nom"><br>
+        <label for="fcognom">Cognom</label><br>
+        <input type="text" id="fcognom" name="cognom">
+      </div>
+      
+      <div class="form-item">
+          <p>Indica la teva data de naixement:</p>
+          <label for="date"></label>
+          <input type="date" id="date" name="data_naixement"><br>
+      </div>
+      
+      <div class="form-item" id="selector_sexe">
+          <p>Sel·lecciona el teu sexe:</p>
+          <input type="radio" id="home" name="sex_selector" value="Home">
+          <label for="home">Home</label><br>
+          <input type="radio" id="dona" name="sex_selector" value="Dona">
+          <label for="dona">Dona</label><br>
+          <input type="radio" id="no_especificar" name="sex_selector" value="No_especificar">
+          <label for="no_especificar">No especificar</label><br>
+      </div>
+      
+      <div class="form-item">
+          <p>Nacionalitat:</p>
+          <label for="pais">Escull el teu país:</label><br>
+          <select name="pais" id="pais">
+              <option value="espanya">Espanya</option>
+              <option value="noruega">Noruega</option>
+              <option value="polonia">Polonia</option>
+              <option value="bulgaria">Bulgaria</option>
+              <option value="suecia">Suècia</option>
+              <option value="frança">França</option>
+              <option value="finlandia">Finlandia</option>
+              <option value="estonia">Estonia</option>
+              <option value="italia">Itàlia</option>
+              <option value="romania">Romania</option>
+              <option value="altre">Altre</option>
+          </select>
+        </div>
+    </div>
+      
+    <div class="form-group2">
+      <div class="form-item2">
+        <fieldset>
+            <legend>Contacte</legend>
+            <label for="email">Correu:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefon">Telèfon:</label>
+            <input type="tel" id="telefon" name="telefon" required>
+        </fieldset>
+      </div>
+    
+      <div class="form-item2">
+        <p>Seguretat</p>
+        <label for="contrasenya">Contrasenya:</label>
+        <input type="password" id="contrasenya" name="contrasenya" required>
+        <label for="repetir_contrasenya">Repetir contrasenya:</label>
+        <input type="password" id="repetir_contrasenya" name="repetir_contrasenya" required>
+      </div>
+    
+      <div class="form-item2">
+        <p>Indica la teva edat:</p>
+        <label for="edat">Selector d'edat:</label>
+        <input type="range" id="edat" name="edat" min="15" max="99">
+        <span id="mostrarEdat">57</span> anys
+      </div>
+    
+      
+      <div class="form-item2">
+          <p>Foto</p>
+          <label for="foto">Afegir foto de perfil:</label>
+          <input type="file" id="foto" name="foto">
+      </div>   
+    </div>
+    
+    <div class="form-group3">
+      <div class="form-item3" id="selector_modul">
+        <p>Escull els Mòduls Matriculats</p>
+        <label>Mòduls Matriculats:</label><br>
+        <input type="checkbox" id="modul0" name="moduls[smx1]" value="modul0">
+        <label for="modul1">M0 Consolidació de Pràctiques (Reforç)</label><br>
+        <input type="checkbox" id="modul1" name="moduls[smx1]" value="modul1">
+        <label for="modul1">M1 Muntatge i manteniment d'equips (Hardware)</label><br>
+        <input type="checkbox" id="modul2" name="moduls[smx1]" value="modul2">
+        <label for="modul1">M2 Sistemes operatius monolloc</label><br>
+        <input type="checkbox" id="modul3" name="moduls[smx1]" value="modul3">
+        <label for="modul1">M3 Ofimàtica</label><br>
+        <input type="checkbox" id="modul5" name="moduls[smx1]" value="modul5">
+        <label for="modul1">M5 Xarxes locals</label><br>
+        <input type="checkbox" id="modul8" name="moduls[smx1]" value="modul8">
+        <label for="modul1">M8 Aplicacions web</label><br>
+        <input type="checkbox" id="modul9" name="moduls[smx1]" value="modul9">
+        <label for="modul1">M9 Formació i orientació laboral (FOL)</label><br>
+        <input type="checkbox" id="modul10" name="moduls[smx1]" value="modul10">
+        <label for="modul1">M10 Empresa i iniciativa emprenedora (EIE)</label><br>
+        <input type="checkbox" id="modul12" name="moduls[smx1]" value="modul12">
+        <label for="modul1">M12 Anglès</label><br>
+      </div>
+      
+      <div class="form-item3">
+        <p>Matriculació</p>
+        <label for="motiu">Motiu de Matriculació:</label>
+        <textarea id="motiu" name="motiu" rows="4" cols="50" required></textarea>
+      </div>
+    </div>
+
+      <div id="selector_consentiment">
+        <p>Consentiment</p>
+        <input type="checkbox" id="consentiment" name="consentiment" required>
+        <label for="consentiment">Consentiment per tractar les dades</label>
+      </div>
+
+          <button id="button-submit" type="submit">Enviar</button>
+          <button id="button-reset" type="reset">Cancelar</button>
+    </form>
+  </div>
+  </main>
+
+    <section>
+      <h2>Contacte</h2>
+      <ul>
+        <li>Email: s.martinez6@sapalomera.cat</li>
+        <li>Telèfon: 123 12 31 23</li>
+        <li>Pàgina web</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Xarxes Socials</h2>
+      <ul>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://www.YouTube.com" target="_blank">YouTube</a></li>
+        <li><a href="https://twitter.com/miusuario" target="_blank">Twitter</a></li>
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+      </ul>
+    </section>
+
+  <footer>
+    <p>&copy; 2024 Shaila</p>
+  </footer>
+
+  <script>
+    function toggleDark() {
+      const body = document.body;
+      body.classList.toggle("dark-mode");
+    }
+  </script>
+
+  <script>
+    var edatSelector = document.getElementById("edat");
+    var mostrarEdat = document.getElementById("mostrarEdat");
+
+    edatSelector.addEventListener("input", function() {
+        mostrarEdat.textContent = edatSelector.value;
+    });
+</script>
+
+</body>
+</html>
